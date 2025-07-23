@@ -1,0 +1,44 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Noto Serif", serif;
+}
+.navbar{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1140px;
+    margin: 30px auto;
+    
+}
+.navbar-ul{
+    display: flex;
+    list-style: none;
+    gap: 48px;
+    padding: 22px 0;
+}
+.navbar-ul a{
+    text-decoration: none;
+}
+.home{
+    color: rgb(37, 36, 50);
+    font-size: 16px;
+    font-weight: 700;
+}
+.shop{
+    color: rgb(137, 135, 161);
+    font-size: 16px;
+    font-weight: 400;
+}
+.about{
+    color: rgb(137, 135, 161);
+    font-size: 16px;
+    font-weight: 400;
+}
+.cart{
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    font-weight: 400;
+}
