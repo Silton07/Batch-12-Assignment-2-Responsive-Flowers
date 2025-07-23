@@ -42,3 +42,64 @@
     font-size: 16px;
     font-weight: 400;
 }
+.banner-section{
+    display: flex;
+    max-width: 1140px;
+    margin: 0px auto;
+    margin-top: 100px;
+}
+.banner-section-text{
+    padding-top: 150px;
+}
+.banner-section-text h1{
+    font-size: 65px;
+    font-weight: 700;
+
+}
+.banner-section-text{
+    font-size: 22px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.5);
+}
+.banner-section-image{
+    padding-top: 90px;
+}
+
+.banner-section-image img{
+    width: 100%; 
+}
+
+
+@media screen and (max-width: 576px) {
+    
+    *{
+        margin: 2px;
+        padding: 2px;
+        box-sizing: border-box;
+    }
+    .home,
+    .shop,
+    .about{
+        display: none;
+        visibility: hidden;
+    }
+    .navbar-ul{
+        gap: 0px;
+        margin-right:10px;
+    }
+    .banner-section{
+        flex-direction: column-reverse;
+    }
+    .banner-section-text{
+        padding-top: 28px;
+    }
+    .banner-section-text h1{
+        font-size: 24px;
+    }
+    .banner-section-text p{
+        font-size: 16px;
+    }
+    .banner-section-image{
+        padding-top: 30px;
+    }
+}
