@@ -122,54 +122,137 @@
   padding: 10px 50px 10px 50px;
   border: none;
 }
-.Plants-lover{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 1140px;
-    margin: 0px auto;
-    margin-top: 210px;
-    gap: 70px;
-    
+.Plants-lover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1140px;
+  margin: 0px auto;
+  margin-top: 210px;
+  gap: 70px;
 }
-.Plants-lover-image{
-    width: 100%;
-    position: relative;
+.Plants-lover-image {
+  width: 100%;
+  position: relative;
 }
-.Plants-lover-image-1{
-position: static;
-max-width: 540px;
+.Plants-lover-image-1 {
+  position: static;
+  max-width: 540px;
 }
-.Plants-lover-image-2{
-position: absolute;
-width: 60%;
-bottom: 70%;
-right: -20%;
+.Plants-lover-image-2 {
+  position: absolute;
+  width: 60%;
+  bottom: 70%;
+  right: -20%;
 }
-.Plants-lover-text{
-    max-width: 540px;
+.Plants-lover-text {
+  max-width: 540px;
 }
-.Plants-lover-text h1{
-    font-size: 50px;
-    font-weight: 700;
-    color: rgb(0, 0, 0);
+.Plants-lover-text h1 {
+  font-size: 50px;
+  font-weight: 700;
+  color: rgb(0, 0, 0);
 }
-.Plants-lover-text ul{
-    margin-left: 30px;
+.Plants-lover-text ul {
+  margin-left: 30px;
 }
-.Plants-lover-text ul li{
-    font-size: 22px;
-    font-weight: 400;
-    color: rgba(0, 0, 0, 0.5);
-    line-height: 27px;
-    margin: 20px auto;
+.Plants-lover-text ul li {
+  font-size: 22px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.5);
+  line-height: 27px;
+  margin: 20px auto;
+}
+.latest-deals-text {
+  text-align: center;
+  margin-top: 120px;
+}
+.latest-deals-text h1 {
+  font-size: 50px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.latest-deals-text p {
+  font-size: 22px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.5);
 }
 
+.latest-deals-image {
+  max-width: 1140px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 0px auto;
+  text-align: center;
+  gap: 3px;
+  margin-top: 120px;
+}
+
+.latest-deals-image-1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4)),
+    url(../assets/deal-bloom.png);
+  background-repeat: no-repeat;
+  max-width: 366px;
+  height: 200px;
+  border-radius: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  gap: 10px;
+}
+.latest-deals-image-1 h2,
+.latest-deals-image-3 h2 {
+  font-size: 20px;
+  font-weight: 700;
+}
+.latest-deals-image-1 p,
+.latest-deals-image-3 p {
+  font-size: 16px;
+  font-weight: 600;
+}
+.latest-deals-image-2 h2 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+.latest-deals-image-2 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4)),
+    url("../assets/deal-zabo.png");
+  background-repeat: no-repeat;
+  max-width: 750px;
+  height: 420px;
+  border-radius: 20px;
+  grid-row: 1 / span 2;
+  grid-column: 2 / span 2;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.latest-deals-image-3 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4)),
+    url(../assets/deal-ana.png);
+  background-repeat: no-repeat;
+  max-width: 366px;
+  height: 200px;
+  border-radius: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  gap: 10px;
+}
 
 /* Responsive */
 
 @media screen and (max-width: 576px) {
-  *{
+  * {
     margin: 2px;
     padding: 2px;
     box-sizing: border-box;
@@ -197,38 +280,51 @@ right: -20%;
   }
   .banner-section-image img {
     padding-top: 30px;
-    width: 140%;
+    width: 100%;
   }
-  .card{
+  .card {
     /* display: grid; */
     grid-template-columns: repeat(2, 1fr);
     gap: 3px;
   }
-  .card-section-text{
+  .card-section-text {
     margin-left: 20px;
   }
-  .Plants-lover{
+  .Plants-lover {
     flex-direction: column;
     margin-top: 50px;
     gap: 15px;
   }
-  .Plants-lover-text{
+  .Plants-lover-text {
     max-width: 540px;
   }
-  .Plants-lover-text h1{
+  .Plants-lover-text h1 {
     font-size: 1.3rem;
   }
-  .Plants-lover-text ul{
+  .Plants-lover-text ul {
     margin-left: 30px;
   }
-  .Plants-lover-text ul li{
+  .Plants-lover-text ul li {
     line-height: 20px;
     margin: 10px auto;
-
   }
-  .Plants-lover-image-2{
+  .Plants-lover-image-2 {
     display: none;
   }
+  .latest-deals-text{
+    margin-top: 50px;
+  }
+  .latest-deals-image {
+    margin-top: 50px;
+    grid-template-columns: repeat(1, 1fr);
+  }
 
-  
+  .latest-deals-image-2 {
+    grid-row: auto;
+    grid-column: auto;
+    order: 3;
+    max-width: 366px;
+    height: 200px;
+    border-radius: 10px;
+  }
 }
